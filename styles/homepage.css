@@ -91,6 +91,7 @@ h2 {
     text-align: center;
     font-size: 80px;
     margin: 0 auto;
+    color: var(--light-text-color)
 }
 
 .course-filters {
