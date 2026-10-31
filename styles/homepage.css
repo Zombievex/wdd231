@@ -1,0 +1,119 @@
+:root {
+    --background-color: #e0e3e8;
+    --card-color: #FFFFFF;
+    --header-color: #17263C;
+
+    --text-color: #243447;
+    --muted-text-color: #586779;
+    --light-text-color: #FFFFFF;
+
+    --accent-color: #2563A6;
+    --border-color: #E2E8F0;
+
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+header {
+    font-size: 64px;
+}
+
+.navBar {
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.title img {
+    height: 2em;
+    width: auto;
+    align-items: end;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    border-color: var(--text-color);
+    padding: 12px 16px;
+    
+}
+
+.active {
+    background-color: var(--card-color);
+    color: var(--muted-text-color)
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--first-color);
+    min-height: 50px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: var(--card-color);
+    font-size: 32px;
+    padding: 0px;
+}
+
+.card img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    background-color: var(--accent-color);
+    text-align: center;
+    font-size: 80px;
+    margin: 0 auto;
+}
+
+.course-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.course-filters button {
+    flex: 1;
+    padding: 10px;
+    font-size: 32px;
+}
+
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.course {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

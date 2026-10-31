@@ -1,0 +1,22 @@
+/* large view navigation ************************************/
+@media (min-width: 780px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        justify-content: space-evenly;
+    }
+
+    .double {
+        grid-column: 1/3;
+    }
+
+    .triple {
+        grid-column: 1/4;
+    }
+}   
