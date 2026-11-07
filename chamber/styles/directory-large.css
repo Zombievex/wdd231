@@ -1,0 +1,29 @@
+@media (min-width: 780px) {
+
+    .view-buttons button {
+        font-size: 24px;
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .view-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Grid view */
+    #company-list.grid-view {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    /* List view */
+    #company-list.list-view {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

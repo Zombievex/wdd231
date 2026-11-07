@@ -1,0 +1,68 @@
+{
+  "companies": [
+    {
+      "name": "Idaho Falls' Falls Tours",
+      "address": "123 Fall street, Idaho Falls, ID",
+      "phone": "208-555-0001",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 2,
+      "description": "Tour Company"
+    },
+    {
+      "name": "Not Cannibal Bakery",
+      "address": "1548 bakers ln, Idaho Falls, ID",
+      "phone": "208-555-0002",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 3,
+      "description": "Just a completely normal bakery. Who said we weren't?"
+    },
+    {
+      "name": "Children's Sweat Shop",
+      "address": "85 timmy rd, Idaho Falls, ID",
+      "phone": "208-555-0003",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 1,
+      "description": "Where we believe anyone is capable"
+    },
+    {
+      "name": "Maverick",
+      "address": "1 carribean ln, Idaho Falls, ID",
+      "phone": "208-555-0004",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 2,
+      "description": "Gas Station"
+    },
+    {
+      "name": "Toy Store",
+      "address": "234 teddy rd, Idaho Falls, ID",
+      "phone": "208-555-0005",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 1,
+      "description": "Totally not partnered with Children's Sweat Shop"
+    },
+    {
+      "name": "Sandwich with a Pretty Big Pickle Store",
+      "address": "8 pickle st, Idaho Falls, ID",
+      "phone": "208-555-0006",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 3,
+      "description": "We sell sandwiches that have a pretty big pickle in them"
+    },
+    {
+      "name": "Naming is hard",
+      "address": "82, Idaho Falls, ID",
+      "phone": "208-555-0007",
+      "website": "https://example.com",
+      "image": "store.webp",
+      "membership": 2,
+      "description": "Starting at $499.99, we will name something for you!"
+    }
+    
+  ]
+}

@@ -1,0 +1,189 @@
+:root {
+    --background-color: #e0e3e8;
+    --card-color: #FFFFFF;
+    --header-color: #17263C;
+
+    --text-color: #243447;
+    --muted-text-color: #586779;
+    --light-text-color: #FFFFFF;
+
+    --accent-color: #2563A6;
+    --border-color: #E2E8F0;
+
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px;
+    font-size: 60px;
+}
+
+header .title {
+    grid-column: 1;
+}
+
+header span {
+    text-align: center;
+}
+
+
+/* menu open and closer */
+#menu::before {
+	content: "☰";
+    font-size: 50px;
+}
+
+#menu {
+    grid-column: 2;
+}
+
+.navigation {
+    grid-column: 1 / -1;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+    font-size: 30px;
+    background-color: rgba(55, 55, 55, 0.2)
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+
+.title img {
+    height: 2em;
+    width: auto;
+    align-items: end;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    border-color: var(--text-color);
+    padding: 12px 16px;
+    
+}
+
+.active {
+    background-color: var(--card-color);
+    color: var(--muted-text-color)
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--first-color);
+    min-height: 50px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    background-color: var(--accent-color);
+    text-align: center;
+    font-size: 80px;
+    margin: 0 auto;
+    color: var(--light-text-color)
+}
+
+
+.view-buttons {
+    display: none;
+}
+
+#company-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#company-list .company {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* company card info */
+#company-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.company {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.company-header {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.company-header h2 {
+    margin: 0;
+}
+
+.company-header p {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+.company-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.company-body img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-info p {
+    margin: 0;
+}
