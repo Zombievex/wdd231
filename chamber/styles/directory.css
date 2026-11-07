@@ -86,9 +86,9 @@ nav a {
     
 }
 
-.active {
+.navigation a.active {
     background-color: var(--card-color);
-    color: var(--muted-text-color)
+    color: var(--text-color);
 }
 
 
@@ -133,13 +133,6 @@ h2 {
     box-sizing: border-box;
 }
 
-/* company card info */
-#company-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-}
 
 .company {
     background-color: white;
