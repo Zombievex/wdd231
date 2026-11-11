@@ -6,7 +6,10 @@ const courses = [
     { name: "CSE 111", type: "CSE", credits: 2 },
 ];
 
+let creditCount = 0;
+
 createCourseCards(courses);
+
 
 document.querySelector("#all").addEventListener("click", () => {
     createCourseCards(courses);
@@ -23,6 +26,7 @@ document.querySelector("#wdd").addEventListener("click", () => {
 });
 
 function createCourseCards(filter){
+    creditCount = 0;
 
 	document.querySelector("#course-list").innerHTML = "";
 	filter.forEach(course  => {
@@ -32,5 +36,9 @@ function createCourseCards(filter){
         card.textContent = course.name;
 
 		document.querySelector("#course-list").appendChild(card);
+
+        creditCount += course.credits
     });
+
+    document.querySelector("#credit-count").textContent = `Total Credits for the courses listed above: ${creditCount}`;
 }
