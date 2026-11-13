@@ -28,6 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--accent-color);
+    color: var(--light-text-color);
 
     font-size: 24px;
     padding: 15px 30px;
@@ -74,6 +75,11 @@
 
 .weather h3 {
     font-size: 40px;
+}
+
+.weather figcaption {
+    font-size: 32px;
+    color: var(--dark-text-color);
 }
 
 .forecast {

@@ -25,12 +25,16 @@ apiFetch();
 
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  const desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const desc = data.weather[0].description;
+
+    weatherIcon.src = iconsrc;
+    weatherIcon.alt = desc;
+    weatherIcon.hidden = false;
+
+    captionDesc.textContent = desc;
 }
 
 async function fetchForecast() {
