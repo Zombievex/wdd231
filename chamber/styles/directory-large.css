@@ -7,6 +7,14 @@
         border-radius: 8px;
     }
 
+    h2 {
+    background-color: var(--accent-color);
+    text-align: center;
+    font-size: 64px;
+    margin: 0 auto;
+    color: var(--light-text-color)
+}
+
     .view-buttons {
         display: flex;
         justify-content: center;
