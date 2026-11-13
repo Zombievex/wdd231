@@ -1,0 +1,146 @@
+:root {
+    --background-color: #e0e3e8;
+    --card-color: #FFFFFF;
+    --header-color: #17263C;
+
+    --text-color: #243447;
+    --muted-text-color: #586779;
+    --light-text-color: #FFFFFF;
+
+    --accent-color: #2563A6;
+    --border-color: #E2E8F0;
+
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light-text-color);
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+.hero button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--accent-color);
+
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.current_events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.current_events h2 {
+    font-size: 48px;
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+.event {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.event h3 {
+    margin: 0 0 10px;
+}
+
+.event p {
+    margin: 0;
+}
+
+.weather {
+    text-align: center;
+    margin: 8px;
+    border: 0px;
+}
+
+.weather span {
+    font-size: 52px;
+}
+
+.weather h3 {
+    font-size: 40px;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#spotlight {
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    position: fixed;
+}
+
+#spotlight::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#close-spotlight {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#spotlight-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.spotlight-business {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.spotlight-business img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    #spotlight-list {
+        grid-template-columns: 1fr;
+    }
+}

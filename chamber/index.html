@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 231 – Front End Web Development, Colby Orr, this is my directory for the commerce, for BYU Pathway">
+  <meta name="author" content="Colby Orr">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <meta property="og:title" content="Directory of Commerce">
+  <meta property="og:description" content="This is a directory used for commerce and commersating with commerces">
+  <meta property="og:image" content="https://zombievex.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://zombievex.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/directory-large.css">
+  <link rel="stylesheet" href="styles/home.css">
+
+  <script src="scripts/menu-toggle.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <title>WDD 231 – Index/homepage – Colby Orr</title>
+
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <span class="title">
+      <img src="images/logo.svg" alt="Logo">
+      Idaho Falls Chamber of Commerce
+    </span>
+    <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
+    <nav class="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="directory.html">Join</a>
+      <a href="directory.html">Discover</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Idaho Falls Chamber of Commerce</h1>
+    <section class="hero">
+        <img src="images/hero.webp" alt="Scenic view of Idaho Falls">
+        <h1>Welcome to Idaho Falls</h1>
+        <button type="button">Call to Action!</button>
+    </section>
+
+    <section class="current_events">
+        <h2>Current Events in Idaho Falls!</h2>
+
+        <div class="event">
+            <h3>Timmy in the Well</h3>
+            <p>Timmy Sallicker has been finally found in the old Riverton Well. Unfortunately, the 
+                Fire Department currently does not have a long enough ladder reach down to where Timmy is, and
+                Timmy Sallicker can't climb a rope, nor tie it around himself. Timmy's parents, Jim and Kerry Sallicker,
+                are asking for donations to help buy a new ladder so the Fire Department can rescue their son
+                <a href="">GoFundMe</a>
+            </p>
+        </div>
+        <div class="event">
+            <h3>Found missing Credit Card</h3>
+            <p>A Credit card has been found in the downtown area. The name on the back has been mostly scratched off,
+                so if you are looking for a credit card with the numbers 1980 3449 8724 0129 with an expiration date of 9/28
+                and a CVV of 458, please talk to the staff at the Sandwich with a Pretty Big Pickle Restaurant
+            </p>
+        </div>
+        <div class="event">
+            <h3>Christmas Story Come True</h3>
+            <p>A story that seems to fit in better with a christmas movie rather than Idaho Falls, the Johnson Family
+              is experiencing firsthand the meaning of the song "Grandma got ran over by a Reindeer" Mrs Johnson, an 87
+              year old woman, was found off the side of highway 91 with hoof marks over her body. While alive and brought
+              to the nearest hospital, Doctors are doubtful she will make a recovery. 
+            </p>
+        </div>
+        <div class="event">
+            <h3>Not Cannibal Bakery</h3>
+            <p>History in the making! Not Cannibal Bakery has been visitied by Guinness Book of World Records and awarded the world record for the
+                most health inspection visits in one year. When asked about this achievement, the owner responded with "I do not
+                know why we keep getting inspections. Every day, we get more inspections. I can't deal with Health Inspectors and
+                Police every day, it's bad for buisness. But yes, we are very proud of the record."
+            </p>
+        </div>
+        <div class="event">
+            <h3>Toy Store</h3>
+            <p>The Toy Store found on downtown Walsh Street, is offering a free toy to any Child who comes in from December 1st to
+              December 25th without parent supervision. Truly a Santa Claus story, Toy Store is sure to bring the Christmas Spriit
+              to many underprivilaged Young Children.
+            </p>
+        </div>
+        <div class="event">
+            <h3>Naming is Hard</h3>
+            <p>The Naming is Hard company has decided to graciously donate a spotlight to the city of Idaho Falls, since I can't
+              think of anything else to put here. Buy their products.
+            </p>
+        </div>
+    </section>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <figure>
+          <img id="weather-icon" src="" alt="">
+          <figcaption></figcaption>
+      </figure>
+      <h3>Today</h3>
+      <span id="current-temp"></span>
+      
+      <div id="forecast">
+          <h3>Tomorrow</h3>
+          <span id="day1"></span>
+          <h3>Day After Tomorrow</h3>
+          <span id="day2"></span>
+      </div>
+    </section>
+
+    <section class="spotlight">
+        <h2>Spotlight</h2>
+
+  </main>
+
+
+  <footer>
+    <p>WDD231 Class Project</p>
+    <p>
+      &copy; <span id="currentyear"></span> &#10070; Colby Orr &#10070; Idaho, United States
+    </p>
+    <p>
+      lastModified <span id="lastModified"></span>
+    </p>
+  </footer>
+
+
+  <dialog id="spotlight">
+    <button id="close-spotlight" aria-label="Close spotlights">✕</button>
+
+    <h2>Business Spotlights</h2>
+
+    <div id="spotlight-list"></div>
+  </dialog>
+
+</body>
+
+</html>
