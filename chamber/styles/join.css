@@ -144,3 +144,11 @@ form {
         transform: translateY(0);
     }
 }
+
+form h2 {
+    font-size: 1.2rem;
+    color: #E07A5F;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+}
