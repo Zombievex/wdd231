@@ -64,17 +64,12 @@ async function loadSpotlights() {
             spotlightList.appendChild(card);
         });
 
-        if (selected.length > 0) {
-            spotlightPopup.showModal();
-        }
+
 
     } catch (error) {
         console.error(error);
     }
 }
 
-closeSpotlight.addEventListener("click", () => {
-    spotlightPopup.close();
-});
 
 loadSpotlights();

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 231 – Front End Web Development, Colby Orr, this is my directory for the commerce, for BYU Pathway">
+  <meta name="author" content="Colby Orr">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <meta property="og:title" content="Directory of Commerce">
+  <meta property="og:description" content="This is a directory used for commerce and commersating with commerces">
+  <meta property="og:image" content="https://zombievex.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://zombievex.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/directory-large.css">
+
+  <script src="scripts/menu-toggle.js" defer></script>
+  <script src="scripts/join.js"></script>
+  <title>WDD 231 – Index/homepage – Colby Orr</title>
+
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <span class="title">
+      <img src="images/logo.svg" alt="Logo">
+      Idaho Falls Chamber of Commerce
+    </span>
+    <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" class="active">Join</a>
+      <a href="directory.html">Discover</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Join us Today!</h1>
+
+    <form method="GET" action="thankyou.html" class="designOne">
+      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+        <label>Job Title <input type="text" name="title" autocomplete="organization-title" title="Your Job Title" pattern="[A-Za-z -]{7,}"></label>
+        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+        <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+        <label>Organization Name <input type="text" name="organization" autocomplete="organization-name" title="Your Organization's name"></label>
+
+        <h3>Membership Level</h3>
+        <label><input type="radio" name="membership" value="NP" checked> Nonprofit Membership</label>
+        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+
+        
+        <h3>Organization Description</h3>
+        <textarea
+            id="description"
+            name="description"
+            rows="8"
+            cols="80"
+            title="Describe your business"
+        ></textarea>
+
+       <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Schedule An Appointment">
+    </form>
+
+  </main>
+
+
+  <footer>
+    <p>WDD231 Class Project</p>
+    <p>
+      &copy; <span id="currentyear"></span> &#10070; Colby Orr &#10070; Idaho, United States
+    </p>
+    <p>
+      lastModified <span id="lastModified"></span>
+    </p>
+  </footer>
+
+
+</body>
+
+</html>
