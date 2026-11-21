@@ -1,0 +1,29 @@
+#results {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: #F4F1DE;
+    border: 2px solid #3D405B;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+    animation: slideUp 0.5s ease-out;
+}
+
+#results p {
+    padding: 12px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 32px;
+}
+
+#results p:first-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3D405B;
+}

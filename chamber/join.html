@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/directory.css">
   <link rel="stylesheet" href="styles/directory-large.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/join-large.css">
 
   <script src="scripts/menu-toggle.js" defer></script>
   <script src="scripts/join.js"></script>
@@ -47,34 +49,82 @@
   <main>
     <h1>Join us Today!</h1>
 
-    <form method="GET" action="thankyou.html" class="designOne">
-      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-        <label>Job Title <input type="text" name="title" autocomplete="organization-title" title="Your Job Title" pattern="[A-Za-z -]{7,}"></label>
-        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-        <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-        <label>Organization Name <input type="text" name="organization" autocomplete="organization-name" title="Your Organization's name"></label>
+     <div class="adjustment-layout">
 
-        <h3>Membership Level</h3>
-        <label><input type="radio" name="membership" value="NP" checked> Nonprofit Membership</label>
-        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+      <form method="GET" action="thankyou.html" class="designOne">
+        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+          <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+          <label>Job Title <input type="text" name="title" autocomplete="organization-title" title="Your Job Title" pattern="[A-Za-z -]{7,}"></label>
+          <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+          <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+          <label>Organization Name <input type="text" name="organization" autocomplete="organization-name" title="Your Organization's name"></label>
 
-        
-        <h3>Organization Description</h3>
-        <textarea
-            id="description"
-            name="description"
-            rows="8"
-            cols="80"
-            title="Describe your business"
-        ></textarea>
+          <h3>Membership Level</h3>
+          <label><input type="radio" name="membership" value="NP" checked> Nonprofit Membership</label>
+          <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+          <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+          <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
 
-       <input type="hidden" id="timestamp" name="timestamp">
+          
+          <h3>Organization Description</h3>
+          <textarea
+              id="description"
+              name="description"
+              rows="8"
+              cols="80"
+              title="Describe your business"
+          ></textarea>
 
-        <input type="submit" value="Schedule An Appointment">
-    </form>
+        <input type="hidden" id="timestamp" name="timestamp">
+
+          <input type="submit" value="Join Commerce">
+      </form>
+
+      <section id="memberships">
+        <div class = "membership-card">
+          <h2 id="non-profit">Non-Profit</h2>
+          <h3>Free</h3>
+          <p>For non-profit organizations in the Idaho Falls area</p>
+          <ul>
+              <li>Completely Free!</li>
+              <li>5% discount on Silver and Gold tiers!</li>
+          </ul>
+        </div>
+
+        <div class = "membership-card">
+          <h2 id="bronze">Bronze</h2>
+          <h3>One time $399 payment</h3>
+          <p>It almost does something</p>
+          <ul>
+              <li>Show up under the Idaho Falls Directory</li>
+              <li>Jimmy will stop harrassing your store to sign up for Bronze Membership</li>
+          </ul>
+        </div>
+
+        <div class = "membership-card">
+          <h2 id="silver">Silver</h2>
+          <h3>$999 a month</h3>
+          <p>Much better than Bronze</p>
+          <ul>
+              <li>All benefits from Bronze tier</li>
+              <li>Protection from Darrin 'Four Toes' Pagan</li>
+              <li>Have your buisness show up under buisness spotlights</li>
+          </ul>
+        </div>
+
+        <div class = "membership-card">
+          <h2 id="gold">Gold</h2>
+          <h3>$19,999 a month</h3>
+          <p>Highest tier for those who really want their buisness to make a splash</p>
+          <ul>
+              <li>All benefits from previous tiers</li>
+              <li>Have your buisness show up as a spotlight more!</li>
+              <li>Future benefits we're definitely going to add</li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
 
   </main>
 
