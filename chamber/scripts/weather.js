@@ -71,7 +71,7 @@ function displayForecast(data) {
 
     const dates = [...new Set(
         future.map(item => localDate(item.dt))
-    )].slice(0, 2);
+    )].slice(0, 3);
 
     dates.forEach((date, index) => {
         const forecasts = future.filter(item =>
