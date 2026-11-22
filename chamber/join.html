@@ -25,6 +25,7 @@
 
   <script src="scripts/menu-toggle.js" defer></script>
   <script src="scripts/join.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
   <title>WDD 231 – Index/homepage – Colby Orr</title>
 
   <link rel="icon" href="favicon.ico">
@@ -34,7 +35,7 @@
   <header>
     <span class="title">
       <img src="images/logo.svg" alt="Join Page Logo">
-      Idaho Falls Chamber of Commerce
+      Join Idaho Falls Chamber of Commerce
     </span>
     <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
     <nav class="navigation">
@@ -85,48 +86,78 @@
           <h2 id="non-profit">Non-Profit</h2>
           <h3>Free</h3>
           <p>For non-profit organizations in the Idaho Falls area</p>
-          <ul>
-              <li>Completely Free!</li>
-              <li>5% discount on Silver and Gold tiers!</li>
-          </ul>
+          <button type="button" data-modal="nonprofit-modal">Learn More</button>
         </div>
 
         <div class = "membership-card">
           <h2 id="bronze">Bronze</h2>
           <h3>One time $399 payment</h3>
           <p>It almost does something</p>
-          <ul>
-              <li>Show up under the Idaho Falls Directory</li>
-              <li>Jimmy will stop harrassing your store to sign up for Bronze Membership</li>
-          </ul>
+          <button type="button" data-modal="bronze-modal">Learn More</button>
         </div>
 
         <div class = "membership-card">
           <h2 id="silver">Silver</h2>
           <h3>$999 a month</h3>
           <p>Much better than Bronze</p>
-          <ul>
-              <li>All benefits from Bronze tier</li>
-              <li>Protection from Darrin 'Four Toes' Pagan</li>
-              <li>Have your buisness show up under buisness spotlights</li>
-          </ul>
+          <button type="button" data-modal="silver-modal">Learn More</button>
         </div>
 
         <div class = "membership-card">
           <h2 id="gold">Gold</h2>
           <h3>$19,999 a month</h3>
           <p>Highest tier for those who really want their buisness to make a splash</p>
-          <ul>
-              <li>All benefits from previous tiers</li>
-              <li>Have your buisness show up as a spotlight more!</li>
-              <li>Future benefits we're definitely going to add</li>
-          </ul>
+          <button type="button" data-modal="gold-modal">Learn More</button>
         </div>
 
       </section>
     </div>
 
   </main>
+
+
+  <dialog id="nonprofit-modal">
+    <h2 id="non-profit">Non-Profit Membership</h2>
+    <h3>Free</h3>
+    <ul>
+        <li>Completely Free!</li>
+        <li>5% discount on Silver and Gold tiers!</li>
+    </ul>
+    <button type="button" class="close-modal">Close</button>
+</dialog>
+
+<dialog id="bronze-modal">
+    <h2 id="bronze">Bronze Membership</h2>
+    <h3>One time payment $399</h3>
+    <ul>
+      <li>Show up under the Idaho Falls Directory</li>
+      <li>Jimmy will stop harrassing your store to sign up for Bronze Membership</li>
+    </ul>
+    <button type="button" class="close-modal">Close</button>
+</dialog>
+
+<dialog id="silver-modal">
+    <h2 id="silver">Silver Membership</h2>
+    <h3>$999 a month</h3>
+    <ul>
+      <li>All benefits from Bronze tier</li>
+      <li>Protection from Darrin 'Four Toes' Pagan</li>
+      <li>Have your buisness show up under buisness spotlights</li>
+    </ul>
+    <button type="button" class="close-modal">Close</button>
+</dialog>
+
+<dialog id="gold-modal">
+    <h2 id="gold">Gold Membership</h2>
+    <h3>$199,999 a month</h3>
+    <ul>
+      <li>All benefits from previous tiers</li>
+      <li>Have your buisness show up as a spotlight more!</li>
+      <li>Future benefits we're definitely going to add</li>
+    </ul>
+    <button type="button" class="close-modal">Close</button>
+</dialog>
+
 
 
   <footer>

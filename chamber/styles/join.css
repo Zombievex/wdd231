@@ -143,3 +143,26 @@ form h2 {
     border-bottom: 1px solid #eee;
     background-color: transparent;
 }
+
+
+dialog {
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
