@@ -1,0 +1,38 @@
+
+:root {
+    --text-color: #32050E;
+    --background-color: #A0A0A0;
+    --header-color: #32050E;
+    --card-color: #D6D6D6;
+    --primary-color: #702C3A;
+    --accent-color: #B76E79;
+    --hover-color: #914758;
+    --border-color: #70676A;
+    --light-text-color: #FFFFFF;
+
+    --heading-font: 'Fredoka', sans-serif;
+    --body-font: 'Nunito', sans-serif;
+
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+body {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+button {
+    font-family: var(--body-font);
+    font-weight: 800;
+}
+
+.price, .score {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
